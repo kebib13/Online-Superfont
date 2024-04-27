@@ -1,0 +1,45 @@
+.form-container{
+    min-width: 100hh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container form{
+    background-color: white;
+    border-radius: 5px;
+    width: 340px;
+    display: block;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    align-items: center;
+    padding: 5px;
+}
+.form-container form h3{
+    padding: 10px;
+    font-size: 25px;
+}
+.form-container form *{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+.form-container form input{
+    padding: 5px;
+    width: 280px;
+}
+.error-msg{
+    border: crimson;
+    color: crimson;
+    text-transform: capitalize;
+}
+input[type="submit"]{
+    padding: 0;
+    border: 2px solid black;
+    color: black;
+    background: white;
+}
+input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}

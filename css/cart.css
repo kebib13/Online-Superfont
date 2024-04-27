@@ -1,0 +1,73 @@
+.alert{
+    padding: 5px;
+    border: 2px solid black;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 20px;
+}
+.bill_t{
+    display: grid;
+    padding: 20px;
+    gap: 5%;
+    grid-template-columns:auto auto auto auto auto;
+    
+ }
+ .bill{
+    width: 500px;
+    min-width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 70px;
+    display: block;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ }
+ hr{
+    width: 100%;
+    border-bottom: black 2px solid;
+ }
+ .bill h1{
+    text-align: center;
+ }
+ .total{
+    display: block;
+    text-align: right;
+    margin-right: auto;
+ }
+ .total *{
+    display: inline-block;
+ }
+ .bill_data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 20px 0px;
+    margin-top: 0;
+ }
+ .item_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px 0px;
+ }
+ .qty:hover{
+   cursor: pointer;
+}
+.qty{
+   border: 2px solid black;
+   border-radius: 5px;
+   height: fit-content;
+}
+.qty span{
+   user-select:none;
+   margin: 0;
+   padding: 0 10px;
+   flex: 1;
+}
+.qty .sub{
+   user-select:none;
+   border-right: black 2px solid;
+}
+.qty .add{
+   user-select:none;
+   border-left: black 2px solid;
+}

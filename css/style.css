@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+body{
+   background-color: #eee;
+   margin-top: 40px;
+}
+
+.form-container{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+   background: #eee;
+}
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: #fff;
+   text-align: center;
+   width: 500px;
+}
+
+form h3{
+   text-align: center;
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#333;
+}
+
+input,
+select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+form .form-btn{
+   background: #fbd0d9;
+   color:crimson;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-btn:hover{
+   background: crimson;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.form-container form p a{
+   color:crimson;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   border: crimson 2px solid;
+   color: crimson;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+section{
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   word-wrap: break-word;
+   margin: 10px 0;
+   padding:20px;
+   background: white;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+section *{
+   display: inline-block;
+   max-width: 200px;
+   max-height: 200px;
+   margin: 0 10px;
+   align-self: center;
+}
+section article{
+   width: 250px;
+}
+section img{
+   border-right: solid black 2px;
+}
+.qty{
+   display: flex;
+   text-align: justify;
+   width: fit-content;
+   border: black 2px solid;
+   border-radius: 5px;
+}
+article h1{
+   display: block;
+}
+article .tag{
+   color: #999;
+   text-align: right;
+}
+.qty:hover{
+   cursor: pointer;
+}
+.qty span{
+   user-select:none;
+   margin: 0;
+   padding: 0 10px;
+   flex: 1;
+}
+.qty .sub{
+   user-select:none;
+   border-right: black 2px solid;
+}
+.qty .add{
+   user-select:none;
+   border-left: black 2px solid;
+}
+.product_display{
+   width: 100%;
+   display: flex;
+   margin: 50px 0;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.d{
+   width: 20px;
+   height: 20px;
+}
+.bill_t{
+   display: grid;
+   padding: 20px;
+   gap: 5%;
+   grid-template-columns:auto auto auto auto auto;
+   
+}
+.bill{
+   width: 500px;
+   min-width: 30%;
+   padding: 20px;
+   border-radius: 5px;
+   margin: auto;
+   margin-top: 70px;
+   display: block;
+   background-color: white;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+hr{
+   width: 100%;
+   border-bottom: black 2px solid;
+}
+.bill h1{
+   text-align: center;
+}
+.total{
+   display: block;
+   text-align: right;
+   margin-right: auto;
+}
+.total *{
+   display: inline-block;
+}
+.bill_data{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   margin: 20px 0px;
+   margin-top: 0;
+}
+.item_list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin: 20px 0px;
+}
+.pagination{
+   text-align: center;
+
+}

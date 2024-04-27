@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.product{
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    max-width: min-content;
+    min-width: 500px;
+    padding: 10px;
+    margin: 10px;
+}
+.product_description{
+    display: block;
+    margin: 10px;
+}
+.product_description *{
+    margin: 5px;
+}
+.qty{
+    text-align: justify;
+    padding: 0;
+    height: 29px;
+    display: inline-block;
+    border: 2px solid #666;
+    border-radius: 5px;
+}
+.qty .b{
+    padding: auto;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    color: #666;
+    cursor: default;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sub{
+    border-right: #666 2px solid;
+    background-image: url("images/minus.png");
+    
+}
+.add{
+    border-left: #666 2px solid;
+    background-image: url("images/plus.png");
+}
+.qty *{
+    text-align:center;
+    display: inline-block;
+    margin: 0;
+    padding: 2px;
+}
+.qty .q{
+    width: 20px;
+    position: relative;
+    bottom: 9px;
+}
+.value{
+    width: 3em;
+}
+.product img{
+    margin: 10px;
+    padding: 10px;
+    border-right: 2px solid black;
+}
+body {
+    background-color: #f9f9f9;
+    font:
+    0.9em/1.2 Arial,
+    Helvetica,
+    sans-serif;
+}
+div.bill{
+    background: white;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.bill *{
+    margin: 10px;
+}
+.bill h2{
+    display: inline-block;
+}
+hr{
+    border: 1px solid black;
+}
+.bill_t{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 25px;
+    width: 90%;
+    justify-items: left;
+    margin: 5px;
+}
+.d{
+    background-size: 25px 25px;
+    background-image: url('images/delete.png');
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bill_final{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 25px;
+    width: 90%;
+    justify-items: left;
+    margin: 5px;
+}
+.alert{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+
+}

@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="style.css">
+    <div class="bill">
+        <h1>Bill</h1>
+        <hr>
+        <div class="bill_t">
+            <h2>Name</h2>
+            <h2>Rate</h2>
+            <h2>Qty</h2>
+            <h2>Sub-Total</h2>
+            <span></span>
+            <span class="product_name product_id">
+                Lays Magic Masala 80gm
+            </span>
+            <span class="rate product_id">
+                80
+            </span>
+            <span class="qty product_id">
+                <span class="sub b" onmousedown="startInterval('-','product_id')" onmouseup="stopInterval()"></span>
+                <span class="q" id="product_id">0</span>
+                <span class="add b" onmousedown="startInterval('+','product_id')" onmouseup="stopInterval()"></span>
+            </span>
+            <span class="subTotal product_id">
+                0
+            </span>
+            <span class="d product_id" onclick="del('product_id')"></span>
+        </div>
+        <hr>
+        <div class="bill_final">
+            <span></span>
+            <h2>
+                Gross Total:
+            </h2>
+            <span id="g_total">0</span>
+        </div>
+    </div>
+    <script src="j.js"></script>
